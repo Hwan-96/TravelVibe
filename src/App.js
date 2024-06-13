@@ -1,26 +1,24 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import Today from './pages/Today'
-import Traveler from './pages/Traveler'
-import Koreatrip from './pages/Koreatrip'
-import Europetrip from './pages/Europetrip'
-import Americatrip from './pages/Americatrip'
-import Asiatrip from './pages/Asiatrip'
-import Africatrip from './pages/Africatrip'
-import Channel from './pages/Channel'
-import Video from './pages/Video'
-import Search from './pages/Search'
-import ErrorPage from './pages/ErrorPage'
-import Header from './components/section/Header'
 import Main from './components/section/Main'
-import Footer from './components/section/Footer'
+
+const Home = lazy(()=> import('./pages/Home'));
+const Today = lazy(()=> import('./pages/Today'));
+const Traveler = lazy(()=> import('./pages/Traveler'));
+const Koreatrip = lazy(()=> import('./pages/Koreatrip'));
+const Europetrip = lazy(()=> import('./pages/Europetrip'));
+const Americatrip = lazy(()=> import('./pages/Americatrip'));
+const Asiatrip = lazy(()=> import('./pages/Asiatrip'));
+const Africatrip = lazy(()=> import('./pages/Africatrip'));
+const Channel = lazy(()=> import('./pages/Channel'));
+const Video = lazy(()=> import('./pages/Video'));
+const Search = lazy(()=> import('./pages/Search'));
+const ErrorPage = lazy(()=> import('./pages/ErrorPage'));
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Header/>
-      <Main>
+      <Suspense fallback={<Main/>}>
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/today' element={<Today/>} />
@@ -35,8 +33,7 @@ const App = () => {
           <Route path='/search/:searchID' element={<Search/>} />
           <Route path='/*' element={<ErrorPage/>} />
         </Routes>
-      </Main>
-      <Footer/>
+      </Suspense>
     </BrowserRouter>
   )
 }

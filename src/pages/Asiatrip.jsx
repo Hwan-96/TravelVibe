@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Asiatrip = () => {
   return (
-    <div>Asiatrip</div>
+    <Main>
+      아시아여행
+    </Main>
   )
 }
 

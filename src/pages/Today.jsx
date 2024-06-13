@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Today = () => {
   return (
-    <div>Today</div>
+    <Main>
+      투데이입니다
+    </Main>
   )
 }
 

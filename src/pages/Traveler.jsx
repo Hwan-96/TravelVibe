@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Traveler = () => {
   return (
-    <div>Traveler</div>
+    <Main>
+      Traveler
+    </Main>
   )
 }
 

@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const africatrip = () => {
   return (
-    <div>africatrip</div>
+    <Main>
+      아프리카여행
+    </Main>
   )
 }
 

@@ -1,8 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const ErrorPage = () => {
   return (
-    <div>ErrorPage</div>
+    <Main>
+      ErrorPage
+    </Main>
   )
 }
 
