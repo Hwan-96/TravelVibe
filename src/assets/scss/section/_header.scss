@@ -1,5 +1,6 @@
 .header-logo{
-  border-bottom: 1px solid var(--black100);
+  border-bottom: 1px solid var(--bd-40e0d066);
+
   a{
     display: flex;
     padding: 10px;
@@ -29,7 +30,7 @@
   padding: 10px 0;
 
   .menu{
-    border-bottom: 1px solid var(--black100);
+    border-bottom: 1px solid var(--bd-40e0d066);
     li{
       margin-bottom: 5px;
       a{
@@ -71,7 +72,7 @@
       a{
         display: inline-block;
         padding: 7px 15px;
-        border: 1px solid var(--turquoiseAlpha400);
+        border: 1px solid var(--bd-40e0d066);
         font-size: .8rem;
         border-radius: 40px;
         margin: 3px 1px;

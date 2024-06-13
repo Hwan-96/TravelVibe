@@ -4,9 +4,9 @@
   --black: #000;
   --black100: #111;
   --black200: #222;
-  --black300: #000;
-  --black400: #000;
-  --black500: #000;
+  --black300: #333;
+  --black400: #444;
+  --black500: #555;
 
   --blackAlpha100: rgba(17, 17, 17, 0.7);
   
@@ -18,7 +18,7 @@
   --white500: #aaa;
 
   --turquoise: #40E0D0;
-  --turquoiseAlpha400: rgba(64, 224, 208, 0.4);
+  --bd-40e0d066: rgba(64, 224, 208, 0.4);
   
   // 폰트 셋팅
   font-family: var(--mainfont-pretendard);
