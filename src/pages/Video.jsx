@@ -3,7 +3,10 @@ import Main from '../components/section/Main'
 
 const Video = () => {
   return (
-    <Main>
+    <Main
+      title=""
+      description="오늘의 추천 영상입니다."
+    >
       Video
     </Main>
   )
