@@ -1,0 +1,16 @@
+.video-inner{
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+
+  .video{
+    margin-bottom: 20px;
+    
+    .video-thumb{
+    
+    }
+
+  }
+
+}
