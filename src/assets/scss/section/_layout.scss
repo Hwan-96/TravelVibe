@@ -26,3 +26,30 @@
   font-size: .8rem;
   border-top: 1px solid var(--bd-40e0d066);
 }
+
+@media (max-width: 800px) {
+  #header{
+    left: -260px;
+
+    h1{
+      position: fixed;
+      left: 0;
+      top: 0;
+
+      a{
+        align-items: center;
+
+        span{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  #main{
+    padding-left: 0;
+  }
+  #footer{
+    width: 100%;
+    margin-left: 0;
+  }
+}
